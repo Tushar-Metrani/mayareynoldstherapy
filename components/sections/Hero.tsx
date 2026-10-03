@@ -14,7 +14,7 @@ export default function Hero() {
   } = site.hero;
 
   return (
-    <section className="relative grid grid-cols-[70%_14%_16%] bg-secondary md:h-[568px] md:grid-cols-[34%_1fr] md:grid-rows-1">
+    <section className="relative grid grid-cols-[70%_14%_16%] bg-secondary md:h-[568px] md:grid-cols-[34%_1fr] md:grid-rows-1 md:pt-6">
       {/* Text: first on mobile (spans the full width), right-hand column on desktop */}
       <div className="col-span-3 row-start-1 flex flex-col justify-between gap-12 px-6 py-12 md:col-span-1 md:col-start-2 md:py-0 md:pl-[8.3vw] md:pr-[10vw] md:pb-3">
         <p className="max-w-[22rem] md:pt-4 font-[400]">{eyebrow}</p>
