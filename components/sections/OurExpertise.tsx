@@ -3,7 +3,7 @@ import { site } from "@/content/site";
 export default function OurExpertise() {
   const { headingStart, headingScript, areas } = site.ourexpertise;
   return (
-    <div id="section" className="flex gap-12 flex-col justify-between md:flex-row px-6 py-8 md:p-[60px] lg:p-[100px]">
+    <div id="section" className="flex gap-12 flex-col justify-between md:flex-row px-6 py-10 md:p-[60px] lg:p-[100px]">
       <h3 className="text-subheadline md:max-w-[200px]">
         {headingStart} <ScriptWord>{headingScript}</ScriptWord>
       </h3>

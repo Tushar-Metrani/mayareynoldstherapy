@@ -37,7 +37,7 @@ export default function Hero() {
           fill
           priority
           sizes="(min-width: 768px) 100vw, 70vw"
-          className="object-cover"
+          className="object-cover mix-blend-multiply opacity-90"
         />
       </div>
 
@@ -47,7 +47,7 @@ export default function Hero() {
           alt={imageSide.alt}
           fill
           sizes="(min-width: 768px) 100vw, 16vw"
-          className="object-right object-cover"
+          className="object-right object-cover mix-blend-multiply"
         />
       </div>
     </section>

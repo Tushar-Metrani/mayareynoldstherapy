@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
---text: #0e1501;
---background: #fafef2;
-  --primary: #1f3a34;    /* deep forest green: text, borders, buttons */
-  --secondary: #d3ddcf;  /* soft sage: section bands + page tint */
+  --text: #0e1501;
+  --background: white;
+  --primary: #1f3a34;    /* deep forest green */
+  --secondary: #cdd9c6;  /* lighter soft sage (was #b9c9b0) */
   --accent: #a64d30;
 
 

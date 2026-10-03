@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer id="contact">
-      <div className="px-6 py-8 md:p-[60px]">
+      <div className="px-6 py-10 md:p-[60px]">
         <div className="grid gap-12 lg:grid-cols-[42fr_17.5fr_22fr_18.5fr] lg:gap-0">
 
           <div>

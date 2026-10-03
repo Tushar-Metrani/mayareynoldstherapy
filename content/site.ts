@@ -1,41 +1,49 @@
-// All copy, links and image URLs live here. In the redesign pass, replace this file's
-// contents with Dr. Maya Reynolds' content.
+// All copy, links and image URLs live here.
+// Copy below is for Dr. Maya Reynolds, PsyD (Santa Monica, CA), derived strictly from her profile.
+// Image `src` values are YOUR current ones, unchanged. Replace each remaining template (remote) image
+// with your own file in /public/images and update its alt text to match what it shows.
 
 const CDN =
   "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10";
 const img = (path: string) => `${CDN}/${path}?format=1500w`;
 
 export const site = {
-  brand: { name: "Conejo Valley", tagline: "Family Counseling" },
+  seo: {
+    title:
+      "Anxiety, Trauma & Burnout Therapy in Santa Monica, CA | Dr. Maya Reynolds, PsyD",
+    description:
+      "Dr. Maya Reynolds, PsyD offers anxiety, trauma and burnout therapy for adults in Santa Monica, CA, in person and by secure telehealth across California.",
+  },
+
+  brand: { name: "Maya Reynolds", tagline: "Clinical Psychologist" },
 
   nav: [
-    { label: "About", href: "#" },
-    { label: "Our Team", href: "#" },
-    { label: "Specialties", href: "#" },
-    { label: "Methods", href: "#" },
-    { label: "FAQs", href: "#" },
+    { label: "About", href: "#about" },
+    { label: "Specialties", href: "#specialties" },
+    { label: "Approach", href: "#approach" },
+    { label: "Office", href: "#office" },
+    { label: "FAQs", href: "#faqs" },
   ],
   navCta: { label: "Contact", href: "#contact" },
 
   logo: {
+    // TODO: replace with Maya's own logo / wordmark file in /public/images
     src: img(
       "7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png",
     ),
-    alt: "Conejo Valley",
+    alt: "Dr. Maya Reynolds, PsyD, Clinical Psychologist",
   },
 
   hero: {
-    eyebrow: "ONLINE & IN-PERSON COUNSELING IN NEWBURY PARK & ACROSS CA",
+    eyebrow: "IN-PERSON IN SANTA MONICA & ONLINE ACROSS CALIFORNIA",
     headingStart:
-      "Rebuild your foundation on solid ground and finally begin to",
-    headingScript: "thrive",
+      "Anxiety & trauma therapy in Santa Monica, CA to help you feel",
+    headingScript: "grounded",
     subtext:
-      "Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.",
+      "Dr. Maya Reynolds, PsyD, helps high-achieving adults quiet overthinking, recover from burnout, and heal from the past.",
     cta: { label: "Book an appointment", href: "#contact" },
     imageMain: {
-      src: img(
-        "80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg",
-      ),
+      src: "/images/happy_mother_children.jpg",
       alt: "Family walking together on a beach",
     },
     imageSide: {
@@ -48,180 +56,197 @@ export const site = {
 
   intro: {
     heading:
-      "You're holding onto hope that life can be better than it is right now.",
+      "You may look like you're holding it all together, but inside you're exhausted.",
     leadLabel:
-      "At Conejo Valley Family Counseling we want to make that hope a reality.",
+      "At my Santa Monica practice, I help adults move from constant worry toward steadiness.",
     leftText:
-      "Whether you're an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life's ups and downs.",
+      "Many of the people I work with are high-achieving, thoughtful, and self-aware, yet they feel stuck in overthinking, tense in their bodies, or always bracing for something to go wrong. If anxiety, panic, burnout, or the effects of past experiences are wearing you down, you don't have to keep pushing through alone.",
     rightText:
-      "First and foremost, we believe what you're going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.",
+      "As a licensed clinical psychologist, I offer a warm, collaborative, and grounded space where you're respected, understood, and actively involved. Together we'll look at both the emotional and physical sides of what you're feeling, so you can build insight, resilience, and a stronger relationship with yourself.",
     image: {
-      src: img(
-        "7a40691c-70a5-4307-b9ae-974592087a8f/Jennifer+A+-+Images+%283%29.jpg",
-      ),
+      src: "/images/happy_father_daughter.jpg",
       alt: "Sandy beach with gentle ocean waves",
     },
   },
 
   whoWeHelp: {
-    headingStart: "Who we",
+    headingStart: "Who I",
     headingScript: "help",
     items: [
       {
-        title: "Adults",
-        text: "Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.",
+        title: "Professionals",
+        text: "You're capable and driven, but you're running on empty. I help professionals ease anxiety, panic, and burnout, and build more sustainable ways of working and living.",
         image: {
-          src: img(
-            "066f60e6-1354-4d47-a586-ab3f2f2ba612/Jennifer+A+-+Images+%288%29.jpg",
-          ),
+          src: "/images/young_professional.jpg",
           alt: "Two people sitting together by the water",
         },
       },
       {
-        title: "Couples",
-        text: "Relationships require effort, and we're here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.",
+        title: "Entrepreneurs & Creatives",
+        text: "After years of pushing through stress, it's easy to feel disconnected from yourself. Therapy becomes a space to slow down, reconnect, and ease perfectionism and high internal pressure.",
         image: {
-          src: img(
-            "d0157712-388c-4800-aada-c78db97ee966/Jennifer+A+-+Images+%289%29.jpg",
-          ),
+          src: "/images/group_of_women.jpg",
           alt: "A couple embracing on the beach",
         },
       },
       {
-        title: "Children & Teens",
-        text: "Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.",
+        title: "Adults Healing from Trauma",
+        text: "Whether it's a single event or long-standing patterns from childhood, relationships, or chronic stress, we move at a careful pace, with safety and stabilization first.",
         image: {
-          src: img(
-            "d5d62bf4-34a7-4bf4-bf00-e1169863ace7/Jennifer+A+-+Images+%2810%29.jpg",
-          ),
-          alt: "Two children playing in the shallows",
+          src: "/images/happy_couple.jpg",
+          alt: "A happy couple",
         },
       },
     ],
   },
 
   ourexpertise: {
-    headingStart: "Our areas of",
+    headingStart: "My areas of",
     headingScript: "expertise",
     areas: [
-      "DISSOCIATION",
       "ANXIETY",
+      "PANIC",
       "TRAUMA",
+      "COMPLEX TRAUMA",
+      "BURNOUT",
+      "PERFECTIONISM",
+      "STRESS",
+      "OVERTHINKING",
+      "EMOTIONAL REGULATION",
       "RELATIONSHIPS",
-      "FAMILY CONFLICT",
-      "CHILDREN",
-      "SPECIAL NEEDS PARENTING",
-      "TEENS",
-      "DEPRESSION",
-      "INTIMACY & CONNECTION",
-      "MARRIAGE",
+      "CONFIDENCE",
       "...AND MORE.",
     ],
   },
 
   specialties: {
-    headingStart: "Our",
+    headingStart: "My",
     headingScript: "specialties",
     headingEnd: "include…",
     items: [
       {
-        title: "Trauma",
-        text: "We don't always know when and how we've experienced trauma. In therapy, we'll work together to help you process your past, understand what's causing you to stay “stuck,” and regain a sense of safety, control, and hope. You don't have to carry your burdens alone.",
+        title: "Anxiety & Panic",
+        text: "Constant worry, racing thoughts, tension in your body, trouble sleeping: anxiety can be exhausting even when you look fine on the outside. Using CBT and mindfulness-based practices, we'll work to understand what drives your anxiety and help your mind and body settle.",
         cta: { label: "Learn more", href: "#" },
       },
       {
-        title: "EMDR",
-        text: "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.",
+        title: "Trauma & EMDR",
+        text: "Whether you're healing from a single event or long-standing patterns rooted in childhood, relationships, or chronic stress, we'll go at a careful pace. With EMDR and body-oriented techniques, we focus on safety and stabilization so you feel more regulated in everyday life.",
         cta: { label: "Learn more", href: "#" },
       },
       {
-        title: "Dissociation",
-        text: "The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we'll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.",
-        cta: { label: "Learn more", href: "#" },
-      },
-      {
-        title: "Special Needs Parenting",
-        text: "Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.",
+        title: "Burnout & Perfectionism",
+        text: "After years of pushing through stress, it's common to feel disconnected from yourself. Therapy offers space to slow down, ease high internal pressure, and develop more sustainable ways of living and working.",
         cta: { label: "Learn more", href: "#" },
       },
     ],
   },
+
   howWeWork: {
-    eyebrow: "How we work",
-    heading: "We're here to make a difference.",
-    lead: "The clients we work with are balancing so many things at once, it's often hard for them to put themselves first.",
+    eyebrow: "How I work",
+    heading: "Practical tools, with real depth.",
+    lead: "Many people I work with look “functional” on the outside while quietly struggling inside.",
     textLeft:
-      "Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won't find anything “one-size-fits-all” here.) If you're ready to do the work, we're ready to help.",
+      "I take a warm, collaborative, and grounded approach. Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. I integrate evidence-based methods such as cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques to help you understand both the emotional and physiological sides of what you're experiencing.",
     textRight:
-      "Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you've learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what's hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.",
-    cta: { label: "Learn more about us", href: "#" },
-    
+      "Trauma work is an important part of my practice. My approach is paced carefully, with an emphasis on safety, stabilization, and helping you feel more regulated in your daily life, not just during sessions. My goal is not only symptom relief, but also insight, resilience, and a stronger relationship with yourself over time.",
+    cta: { label: "Learn more about my approach", href: "#about" },
+
     image: {
-      src: img("389808ad-7273-4e03-a32b-c172aa735f12/Jennifer+A+-+Images+%286%29.jpg"),
-      alt: "Two people dancing on a sandy beach at sunset",
+      src: "/images/woman_with_plants_ai.jpg",
+      alt: "women observing plants",
     },
   },
 
   quoteBand: {
-    text: "You deserve a place where your story is heard, valued, and understood.",
-    emphasis: "Nothing will be too heavy for us to carry together.",
+    text: "You've spent years pushing through. You deserve a space to slow down and be understood.",
+    emphasis: "Healing can be paced, steady, and yours.",
     image: {
-      src: img(
-        "27b4f80c-ca73-4d1f-824e-ec29a2211142/Jennifer+A+-+Images+%282%29.png",
-      ),
+      src: "/images/nature_landscape.jpg",
       alt: "Two children running along a quiet beach",
     },
   },
 
+  about: {
+    id: "about",
+    eyebrow: "About",
+    heading: "Meet Dr. Maya Reynolds, PsyD",
+    role: "Licensed Clinical Psychologist · Santa Monica, CA",
+    paragraphs: [
+      "I'm a licensed clinical psychologist based in Santa Monica, California, offering therapy for adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences.",
+      "My work often focuses on anxiety, panic, trauma, and burnout. I believe therapy works best when you feel respected, understood, and actively involved in the process.",
+      "If you're looking for a therapist who combines practical tools with depth-oriented work, and who understands the realities of living and working in a fast-paced environment, I may be a good fit.",
+    ],
+    // TODO: Maya's photo from the Drive link in the profile
+    image: {
+      src: "/images/maya.jpg",
+      alt: "Dr. Maya Reynolds, licensed clinical psychologist in Santa Monica, CA",
+    },
+    cta: { label: "Book an appointment", href: "#contact" },
+  },
+
+  ourOffice: {
+    id: "office",
+    eyebrow: "Our office",
+    heading: "A calm, grounding space in Santa Monica",
+    text: "My office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment. Clients often share that the space itself helps them feel more at ease when they arrive.",
+    details: [
+      "In-person sessions at 123th Street 45 W, Santa Monica, CA 90401",
+      "Secure telehealth for clients located in California",
+      "Private, quiet, and uncluttered, with natural light",
+    ],
+    // TODO: use the office photos from the Drive folder in the profile; update alt text to match each one
+    images: [
+      {
+        src: "/images/office-1.jpg",
+        alt: "Calm therapy room with natural light in Santa Monica, CA",
+      },
+      {
+        src: "/images/office-2.jpg",
+        alt: "Comfortable, uncluttered seating area in the therapy office",
+      },
+      {
+        src: "/images/office-3.jpg",
+        alt: "Quiet, private counseling space designed to feel grounding",
+      },
+    ],
+  },
+
   appointmentCta: {
     eyebrow: "Schedule an appointment",
-    headingStart: "Find a therapist who is the right fit for",
-    headingScript: "you",
-    text: "Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we're here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.",
+    headingStart: "Find support that fits your",
+    headingScript: "life",
+    text: "If you're looking for a therapist who combines practical tools with depth-oriented work, I may be a good fit. I offer in-person therapy from my Santa Monica office and secure telehealth sessions for clients located in California.",
     note: "Click the button below to schedule an appointment.",
     cta: { label: "Book now", href: "#contact" },
     imageLeft: {
-      src: img(
-        "1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg",
-      ),
+      src: "/images/grass_flower.jpg",
       alt: "A hand picking up seashells on a sandy beach",
     },
     imageRight: {
-      src: img(
-        "7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg",
-      ),
+      src: "/images/hands_touching_plant.jpg",
       alt: "A person pointing at shells in the sand beside a child standing barefoot",
     },
   },
 
   footer: {
     blurb:
-      "We want to make getting started simple. You're welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA—whatever works best for you.",
+      "Therapy for adults in Santa Monica, CA. Come into my quiet, private office or meet by secure telehealth from anywhere in California, whichever feels best for you.",
     navigate: [
       { label: "Home", href: "/" },
-      { label: "About", href: "#" },
-      { label: "FAQs", href: "#" },
+      { label: "About", href: "#about" },
+      { label: "FAQs", href: "#faqs" },
       { label: "Contact", href: "#contact" },
     ],
-    team: [
-      "Jennifer Anderson",
-      "Heather Williams-Baumgart",
-      "Autumn Bodily",
-      "Candace Bletscher",
-      "Samantha Johnson",
-      "Rosa Gomez",
-      "Chad Flores",
-    ],
+    // Replaces the team list (Maya practices solo). Rename the column heading in Footer to "Specialties".
+    team: ["Anxiety & Panic", "Trauma & EMDR", "Burnout & Perfectionism"],
     contact: {
-      address: [
-        "925 Broadbeck Dr",
-        "Suites 200 and 225",
-        "Newbury Park, CA 91320",
-      ],
-      email: "info@conejovalleycounseling.com",
-      phone: "805.242.3120",
+      address: ["123th Street 45 W", "Santa Monica, CA 90401"],
+      // The profile gives no email or phone, so they are left empty. Hide those two lines in Footer.
+      email: "",
+      phone: "",
       serviceArea:
-        "Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, & Simi Valley",
+        "In-person in Santa Monica. Secure telehealth for clients located in California.",
     },
     legal: [
       { label: "Terms", href: "#" },

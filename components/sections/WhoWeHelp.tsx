@@ -6,7 +6,7 @@ export default function WhoWeHelp() {
   const { headingStart, headingScript, items } = site.whoWeHelp;
 
   return (
-    <section className="px-6 py-8 md:p-[60px] lg:p-[100px]">
+    <section className="px-6 py-10 md:p-[60px] lg:p-[100px]">
       <h3 className="text-subheadline">
         {headingStart} <ScriptWord>{headingScript}</ScriptWord>
       </h3>
@@ -20,7 +20,7 @@ export default function WhoWeHelp() {
                 alt={item.image.alt}
                 fill
                 sizes="(min-width: 768px) 25vw, 100vw"
-                className="object-cover"
+                className="object-cover mix-blend-multiply opacity-90"
               />
             </div>
             <h4 className="mt-10 text-lead">{item.title}</h4>
