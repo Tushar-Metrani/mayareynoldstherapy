@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-accent px-6 py-2.5 text-label lg:px-[6.8vw]">
+      <div className="bg-accent text-secondary text-body px-6 py-2.5 lg:px-[6.8vw]">
         {legal.map((item, i) => (
           <span key={item.label}>
             {i > 0 && <span aria-hidden="true"> | </span>}

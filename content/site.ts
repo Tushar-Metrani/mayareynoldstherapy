@@ -227,7 +227,7 @@ export const site = {
       { label: "Terms", href: "#" },
       { label: "Privacy Policy", href: "#" },
       { label: "Disclaimer", href: "#" },
-      { label: "Website by Walker Strategy Co.", href: "#" },
+      { label: "Website by Grow My Therapy", href: "#" },
     ],
   },
 };
