@@ -188,21 +188,29 @@ export const site = {
   ourOffice: {
     id: "office",
     eyebrow: "Our office",
-    heading: "A calm, grounding space in Santa Monica",
-    text: "My office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment. Clients often share that the space itself helps them feel more at ease when they arrive.",
+    headingStart: "A calm, grounding",
+    headingScript: "space",
+    headingEnd: "in Santa Monica",
+    text: "My office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment. Clients often share that the space itself helps them feel more at ease when they arrive. It's a place to slow down, take a breath, and do the work at your own pace.",
     details: [
-      "In-person sessions at 123th Street 45 W, Santa Monica, CA 90401",
-      "Secure telehealth for clients located in California",
-      "Private, quiet, and uncluttered, with natural light",
+      { label: "Location", text: "123th Street 45 W, Santa Monica, CA 90401" },
+      {
+        label: "Sessions",
+        text: "In person at my Santa Monica office, or by secure telehealth for clients located in California",
+      },
+      {
+        label: "Comfort & privacy",
+        text: "A quiet, private, uncluttered space with natural light",
+      },
     ],
-    // TODO: use the office photos from the Drive folder in the profile; update alt text to match each one
+    cta: { label: "Book an in-person session", href: "#contact" },
     images: [
       {
-        src: "/images/office-1.jpg",
+        src: "/images/office1.jpeg",
         alt: "Calm therapy room with natural light in Santa Monica, CA",
       },
       {
-        src: "/images/office-2.jpg",
+        src: "/images/office2.jpeg",
         alt: "Comfortable, uncluttered seating area in the therapy office",
       },
       {

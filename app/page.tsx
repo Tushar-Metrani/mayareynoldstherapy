@@ -7,6 +7,7 @@ import OurSpecialties from "@/components/sections/OurSpecialties";
 import QuoteBand from "@/components/sections/QuoteBand";
 import AppointmentCTA from "@/components/sections/Appointmentcta";
 import HowWeWork from "@/components/sections/HowWeWork";
+import OurOffice from "@/components/sections/OurOffice";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <OurExpertise/>
         <HowWeWork/>
         <OurSpecialties/>
+        <OurOffice />
         <AppointmentCTA/>
       </main>
       <Footer/>
